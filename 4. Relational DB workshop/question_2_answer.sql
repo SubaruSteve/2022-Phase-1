@@ -1,0 +1,1 @@
+SELECT student.student_name, school.subject_name, school.lecturer, school.max_score FROM school JOIN student ON school.subject_id = student.subject_id WHERE school.subject_name != "Computer Science" AND school.max_score NOT BETWEEN 100 AND 200;
