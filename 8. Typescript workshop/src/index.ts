@@ -48,7 +48,8 @@ interface PersonInterface {
 
 // Question 6 Create a Generic function to sort arrays of any type and concat them together. Any duplicates should be removed.
 function sortAndConcat(data: any[], data2: any[]) {
-    let check: any[] = [];
+    //let check: any[] = [];
+    let check: Array<any> = [];
     data.forEach(function (item) {
         if (check.includes(item)){
             return;
